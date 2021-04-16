@@ -1,0 +1,83 @@
+.title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.title > div {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.title > div > a {
+    font-weight: 700;
+    display: block;
+    font-size: 17px;
+    text-align: center;
+}
+
+.nav {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 980px;
+    padding: 0 15px;
+    background: url("../images/rectangle.png") no-repeat;
+}
+
+.nav li {
+    padding: 5px 0 0;
+    float: left;
+}
+
+.nav li a {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.content li{
+    position: relative;
+    margin: 20px 0;
+    transition: all .2s linear;
+    transform-style: preserve-3d;
+}
+
+.content li:hover{
+    transform: rotateX(90deg);
+}
+
+.content li div,
+.content img{
+    cursor: default;
+    border-radius: 10px;
+}
+
+.content li div:first-child{
+    transform: translateZ(112px);
+}
+
+.content li div:last-child{
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    height: 224px;
+    background-color: pink;
+    transform:  translateY(-50%) rotateX(-90deg);
+}
+
+.content li div:last-child p{
+    text-align: left;
+    font-size: 14px;
+}
+
+
+
